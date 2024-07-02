@@ -1,0 +1,23 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: aurora-log
+  labels:
+    strimzi.io/cluster: aurora-cluster-kafka
+spec:
+  partitions: 3
+  replicas: 3
+  topicName: aurora-log
+
+---
+
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: domain-event
+  labels:
+    strimzi.io/cluster: aurora-cluster-kafka
+spec:
+  partitions: 3
+  replicas: 3
+  topicName: domain-event
