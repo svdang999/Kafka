@@ -30,6 +30,6 @@ metadata:
   labels:
     strimzi.io/cluster: aurora-cluster-kafka
 spec:
-  partitions: 1
+  partitions: 10
   replicas: 1
   topicName: dev-es-paywall-retry
